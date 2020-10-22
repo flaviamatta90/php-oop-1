@@ -7,34 +7,26 @@ class User {
     public $phoneNumber;
     public $email;
     public $password;
+
+
+    public function __construct($_name, $_lastname, $_email, $_password){
+        $this->name = $_name;
+        $this->lastname = $_lastname;
+        $this->email = $_email;
+        $this->password = $_password;
+    }
 }
 
-$user1 = new User();
-    $user1->name = "Flavia";
-    $user1->lastname = "Matta";
-    $user1 ->email= "ssskf.gmail.com";
-    $user1->password = "123456";
+$user1 = new User( "Flavia", "Matta", "ssskf.gmail.com", "123456");
 
-$user2 = new User();
-    $user2->name = "Franco";
-    $user2->lastname = "Neri";
-    $user2 ->email= "sfhyj.gmail.com";
-    $user2->password = "789101";
+$user2 = new User("Franco", "Neri", "sfhyj.gmail.com","789101");
 
-$user3 = new User();
-    $user2->name = "Bianca";
-    $user2->lastname = "Verdi";
-    $user2 ->email= "ooiuy.gmail.com";
-    $user2->password = "112131";
+$user3 = new User("Bianca", "Verdi", "ooiuy.gmail.com","112131");
 
-$user4 = new User();
-    $user2->name = "Mario";
-    $user2->lastname = "Rossi";
-    $user2 ->email= "kutg.gmail.com";
-    $user2->password = "415161";
+$user4 = new User("Mario", "Rossi", "kutg.gmail.com", "415161");
 
-$user5 = new User();
-    $user2->name = "Aldo";
-    $user2->lastname = "Gialli";
-    $user2 ->email= "werrr.gmail.com";
-    $user2->password = "718192";
+$user5 = new User("Aldo", "Gialli", "werrr.gmail.com", "718192");
+
+$users = [$user1, $user2, $user3, $user4, $user5];
+
+var_dump($users);
