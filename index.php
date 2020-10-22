@@ -30,16 +30,10 @@ $user5 = new User("Aldo", "Gialli", "werrr.gmail.com", "718192");
 $users = [$user1, $user2, $user3, $user4, $user5];
 
 
-foreach($users as $user){
-    echo $user->name;
-    echo $user->lastname;
-    echo $user->email;
-    echo $user->password;
 
-}
 ?>
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,6 +41,13 @@ foreach($users as $user){
     <title>OOP</title>
 </head>
 <body>
-<?php ?>
+    <?php foreach($users as $user){?>
+    <ul>
+        <li> <strong>NOME: </strong> <?php echo $user->name; ?></li>
+        <li> <strong>COGNOME: </strong> <?php echo $user->lastname; ?></li>
+        <li> <strong>EMAIL: </strong> <?php echo $user->email; ?></li>
+        <li> <strong>PASSWORD: </strong> <?php echo $user->password; ?></li>
+    </ul>
+    <?php } ?>
 </body>
-</html> -->
+</html>
