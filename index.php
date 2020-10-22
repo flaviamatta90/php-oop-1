@@ -29,4 +29,24 @@ $user5 = new User("Aldo", "Gialli", "werrr.gmail.com", "718192");
 
 $users = [$user1, $user2, $user3, $user4, $user5];
 
-var_dump($users);
+
+foreach($users as $user){
+    echo $user->name;
+    echo $user->lastname;
+    echo $user->email;
+    echo $user->password;
+
+}
+?>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+<?php ?>
+</body>
+</html> -->
